@@ -8,3 +8,9 @@ type User {
 type Query {
     users: [User]
 }
+
+type User @key(fields: "id") {
+  id: ID!
+  name: String
+  email: String
+}
